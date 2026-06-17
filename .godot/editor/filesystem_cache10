@@ -1,0 +1,85 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1781702385
+blue_car.gd::GDScript::3029152967620478309::1781702149::0::1::::<>Area2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::2897966337619819757::1781698192::1781698364::1::::<><><>0<>0<>0d44fed6ef3e93c8897faaf51ba68eb6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.gd::GDScript::7807835176306136670::1781698192::0::1::::<>Node<><>0<>0<><>::
+monster.gd::GDScript::4744775236090859486::1781698192::0::1::::<>RigidBody2D<><>0<>0<><>::
+player.gd::GDScript::1918147007930147366::1781698192::0::1::::<>Area2D<><>0<>0<><>::
+README.md::TextFile::-1::1781698192::0::1::::<><><>0<>0<><>::
+::res://art/::1781698398
+enemyFlyingAlt_1.png::CompressedTexture2D::1002859168843943174::1781698192::1781698364::1::::<><><>0<>0<>50c8e2513b07b8450ad4a0668004da5d<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
+enemyFlyingAlt_2.png::CompressedTexture2D::6033552577962176812::1781698192::1781698364::1::::<><><>0<>0<>95c9869c9ed056b698e59da4eb6eed16<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::
+enemySwimming_1.png::CompressedTexture2D::7015246396320177614::1781698192::1781698364::1::::<><><>0<>0<>e28a8aa137d60cfa43d4cea16d4a113b<>res://.godot/imported/enemySwimming_1.png-dd0e11759dc3d624c8a704f6e98a3d80.ctex::
+enemySwimming_2.png::CompressedTexture2D::6269268528974098248::1781698192::1781698364::1::::<><><>0<>0<>2dc1ce816492125e2a80ff090be47784<>res://.godot/imported/enemySwimming_2.png-4c0cbc0732264c4ea3290340bd4a0a62.ctex::
+enemyWalking_1.png::CompressedTexture2D::3651086451709837434::1781698192::1781698364::1::::<><><>0<>0<>b476125fcb03c6fe075abe12ac92d3b2<>res://.godot/imported/enemyWalking_1.png-5af6eedbe61b701677d490ffdc1e6471.ctex::
+enemyWalking_2.png::CompressedTexture2D::2889394588929029267::1781698192::1781698364::1::::<><><>0<>0<>707bddf4f99f2e60360877f501fcbfea<>res://.godot/imported/enemyWalking_2.png-67c480ed60c35e95f5acb0436246b935.ctex::
+gameover.wav::AudioStreamWAV::4483291017262322089::1781698192::1781698398::1::::<><><>0<>0<>389b4f27d3b8e4f5946e7780d2e5025f<>res://.godot/imported/gameover.wav-98c95c744b35280048c2bd093cf8a356.sample::
+House In a Forest Loop.ogg::AudioStreamOggVorbis::8473516750083342790::1781698192::1781698364::1::::<><><>0<>0<>40ebfcb9b65adc2b775d48d75e93f399<>res://.godot/imported/House In a Forest Loop.ogg-1a6a72ae843ad792b7039931227e8d50.oggvorbisstr::
+playerGrey_up1.png::CompressedTexture2D::8698528130525613547::1781698192::1781698364::1::::<><><>0<>0<>f79112e5afab0deee233c0e1b5fcf011<>res://.godot/imported/playerGrey_up1.png-6bd114d0a6beac91f48e3a7314d44564.ctex::
+playerGrey_up2.png::CompressedTexture2D::3538874480258198175::1781698192::1781698364::1::::<><><>0<>0<>6408338c2691117268af17108f608be4<>res://.godot/imported/playerGrey_up2.png-d6aba85f5f2675ebc7045efa7552ee79.ctex::
+playerGrey_walk1.png::CompressedTexture2D::132501233661389186::1781698192::1781698364::1::::<><><>0<>0<>5b7ecfe5fed185f7a264e5793bd3e634<>res://.godot/imported/playerGrey_walk1.png-c4773fe7a7bf85d7ab732eb4458c2742.ctex::
+playerGrey_walk2.png::CompressedTexture2D::3728821544777950899::1781698192::1781698364::1::::<><><>0<>0<>8f77cc478f0c31628b4e1bb3dbed8a4d<>res://.godot/imported/playerGrey_walk2.png-34d2d916366100182d08037c51884043.ctex::
+::res://art/blue_car/::1781698364
+blue_car0.png::CompressedTexture2D::182663122133235372::1781698192::1781698364::1::::<><><>0<>0<>7b131f495c6c76f2f5f47e5c8f90b83f<>res://.godot/imported/blue_car0.png-1b8225decda0f1f28b8441f1c4b98216.ctex::
+blue_car1.png::CompressedTexture2D::8695150284992542258::1781698192::1781698364::1::::<><><>0<>0<>bf47ad242e8d81405159962240a51bee<>res://.godot/imported/blue_car1.png-a428925ca673a9e51a12819095594e9f.ctex::
+blue_car2.png::CompressedTexture2D::8432305757424367924::1781698192::1781698364::1::::<><><>0<>0<>85a04382c49ccd1cf33162976cfaaec7<>res://.godot/imported/blue_car2.png-a2f7caab3ea68ff2abf37ad9dc0e456a.ctex::
+blue_car3.png::CompressedTexture2D::1652119130586270510::1781698192::1781698364::1::::<><><>0<>0<>ff073a8c932719558d7290d152b0415f<>res://.godot/imported/blue_car3.png-021f7bd181815f7c7c55a231e81e958b.ctex::
+blue_car4.png::CompressedTexture2D::4293526759061004626::1781698192::1781698364::1::::<><><>0<>0<>ddd371763277cc813815f2f32b8ff79d<>res://.godot/imported/blue_car4.png-e7ba5eb86b5dec5ceddd4a533fbfd8b9.ctex::
+blue_car5.png::CompressedTexture2D::2387593152853260295::1781698192::1781698364::1::::<><><>0<>0<>18914d2b6404fc94dac933932efc5eba<>res://.godot/imported/blue_car5.png-c875064183fb4441afb4c58c72bcb84f.ctex::
+blue_car6.png::CompressedTexture2D::6725366963340679760::1781698192::1781698364::1::::<><><>0<>0<>66e1c36ad71485f79dabaf7e02be5f5b<>res://.godot/imported/blue_car6.png-4068fb81907970a2a1699a514b8e66ea.ctex::
+blue_car7.png::CompressedTexture2D::1683550553849965155::1781698192::1781698364::1::::<><><>0<>0<>cc7ae8eef2cfbe2be525712103da2189<>res://.godot/imported/blue_car7.png-47f9353b7b3d8bafe2a87fa536934b42.ctex::
+blue_car8.png::CompressedTexture2D::4455625315592810138::1781698192::1781698364::1::::<><><>0<>0<>9af19d55f39edceb22245cb86544f0df<>res://.godot/imported/blue_car8.png-0f55e5acf605fdf640b57235511305fe.ctex::
+blue_car9.png::CompressedTexture2D::2853676635219797888::1781698192::1781698364::1::::<><><>0<>0<>c71c26826b2f8768f6bc6e77291b040a<>res://.godot/imported/blue_car9.png-fc647b3fe84d441239a7625ee5bcfef5.ctex::
+blue_car10.png::CompressedTexture2D::5189403833306455161::1781698192::1781698364::1::::<><><>0<>0<>af49288453ae7bb652d43bc9b6ecde98<>res://.godot/imported/blue_car10.png-b655ad7c245853c5967e6a988c144259.ctex::
+blue_car11.png::CompressedTexture2D::7945068926852319077::1781698192::1781698364::1::::<><><>0<>0<>38670d7558c307a2884f8b3a29028318<>res://.godot/imported/blue_car11.png-f521212be18a7c625e313886245e6971.ctex::
+blue_car12.png::CompressedTexture2D::4487146597286937220::1781698192::1781698364::1::::<><><>0<>0<>857f27401e14e5a394f813f72bce6e1c<>res://.godot/imported/blue_car12.png-604de6f002d769947deae5976e6c2297.ctex::
+blue_car13.png::CompressedTexture2D::1542922796457717855::1781698192::1781698364::1::::<><><>0<>0<>2ef010f7be45ecf0a550e5d4a510f09e<>res://.godot/imported/blue_car13.png-c1f138cd34fe90af0f3a6fcddee29f73.ctex::
+blue_car14.png::CompressedTexture2D::3914174407387489375::1781698192::1781698364::1::::<><><>0<>0<>73a7a8e4dc833b4e37d36ff246669172<>res://.godot/imported/blue_car14.png-06624e751662e2a66f314db49ba3e484.ctex::
+blue_car15.png::CompressedTexture2D::8762619892405632437::1781698192::1781698364::1::::<><><>0<>0<>621cc7579a8946903cdd44839d5a818b<>res://.godot/imported/blue_car15.png-5162db7d3329f51bf8986098ae8707a1.ctex::
+::res://art/Mini Pixel Pack 2/::1781698192
+Extras credit.txt::TextFile::-1::1781698192::0::1::::<><><>0<>0<><>::
+LICENSE.txt::TextFile::-1::1781698192::0::1::::<><><>0<>0<><>::
+::res://art/Mini Pixel Pack 2/Cars/::1781698364
+NPC_cars (16 x 16).png::CompressedTexture2D::4909623066099972134::1781698192::1781698364::1::::<><><>0<>0<>49d2ec395787392f3bc73861fffcb480<>res://.godot/imported/NPC_cars (16 x 16).png-ef407a73202805eec1dc01d57d37cfeb.ctex::
+Player_blue (16 x 16).png::CompressedTexture2D::7304275990355618794::1781698192::1781698364::1::::<><><>0<>0<>8047767354c9e51e12d7495266ce050b<>res://.godot/imported/Player_blue (16 x 16).png-b438c1506f2a90df68eabb06ce44717d.ctex::
+Player_green (16 x 16).png::CompressedTexture2D::4083904063977271471::1781698192::1781698364::1::::<><><>0<>0<>55dfbbab385cb7bf8f064d65b6c6c00d<>res://.godot/imported/Player_green (16 x 16).png-537dc4da44e2d4113fa9f3e80210203f.ctex::
+Player_red (16 x 16).png::CompressedTexture2D::3905705388545663588::1781698192::1781698364::1::::<><><>0<>0<>b90c28ae35bdbeb6170fa964ef84b340<>res://.godot/imported/Player_red (16 x 16).png-73d85116500a5d14e2fcd406a07f3234.ctex::
+Player_yellow (16 x 16).png::CompressedTexture2D::4174884932012897841::1781698192::1781698364::1::::<><><>0<>0<>1d903f6c88ad41c1944ea8c8cbe00bb3<>res://.godot/imported/Player_yellow (16 x 16).png-4476201471a1a6796af6409f398a6030.ctex::
+Police (16 x 16).png::CompressedTexture2D::423517929673732964::1781698192::1781698364::1::::<><><>0<>0<>49966d7037db3c0d38f86addfbd64f60<>res://.godot/imported/Police (16 x 16).png-20fe858c8352f9ac3c7adaa0177f3982.ctex::
+::res://art/Mini Pixel Pack 2/Levels/::1781698364
+Desert_details (16 x 16).png::CompressedTexture2D::5670375789178387181::1781698192::1781698364::1::::<><><>0<>0<>2c410662145af848a26deeb34d356014<>res://.godot/imported/Desert_details (16 x 16).png-9fe2ed61092d89c388dc865918a7c807.ctex::
+Desert_gas_station (128 x 304).png::CompressedTexture2D::2031070884600001548::1781698192::1781698364::1::::<><><>0<>0<>f2397b41d4a73f004f177bc21cc0ab8b<>res://.godot/imported/Desert_gas_station (128 x 304).png-6b050d755e5e7310e5b0789a4571cd82.ctex::
+Desert_road (64 x 64).png::CompressedTexture2D::1225954015236357229::1781698192::1781698364::1::::<><><>0<>0<>dca0eca71f213e411748e3f84eab0f35<>res://.godot/imported/Desert_road (64 x 64).png-2b907150cd950ca6869d3decb32c2af2.ctex::
+Highway_gas_station (176 x 352).png::CompressedTexture2D::984982277491834628::1781698192::1781698364::1::::<><><>0<>0<>33e311770d8d91e1fb478edc4c8fd6f8<>res://.godot/imported/Highway_gas_station (176 x 352).png-652e9ba47d020d1b069bb49188acb3be.ctex::
+Highway_road (96 x 64).png::CompressedTexture2D::4864290808676008959::1781698192::1781698364::1::::<><><>0<>0<>8ce70586182b1a6f571b38175f00678b<>res://.godot/imported/Highway_road (96 x 64).png-63d03f07298f73b3ce91505485bfe3c4.ctex::
+Highway_water_animation (16 x 16).png::CompressedTexture2D::3527870335479741781::1781698192::1781698364::1::::<><><>0<>0<>85207fcb4cbb2743ac7019cb1f0001d9<>res://.godot/imported/Highway_water_animation (16 x 16).png-85723de49697e51f61446d9ef5269bde.ctex::
+Highway_water_color (16 x 16).png::CompressedTexture2D::7218787356136126016::1781698192::1781698364::1::::<><><>0<>0<>c5dd63efae6574b0a474a3bd3326823e<>res://.godot/imported/Highway_water_color (16 x 16).png-9d375013ffb0d8ef96695a9b812cccce.ctex::
+Summer_details (16 x 16).png::CompressedTexture2D::619345508085002501::1781698192::1781698364::1::::<><><>0<>0<>d49170217efdb2f82a7a45b423aa9d3f<>res://.godot/imported/Summer_details (16 x 16).png-6f12d49cded667e43ab06437b531faea.ctex::
+Summer_gas_station (128 x 304).png::CompressedTexture2D::2670601569766866733::1781698192::1781698364::1::::<><><>0<>0<>3814c765ef5eaae7be2f6f0213b7ef07<>res://.godot/imported/Summer_gas_station (128 x 304).png-17604d82f51e88a057adeaf77b084d5a.ctex::
+Summer_road (64 x 64).png::CompressedTexture2D::439080726029507296::1781698192::1781698364::1::::<><><>0<>0<>42f00516cf03a01613fdb723700279d5<>res://.godot/imported/Summer_road (64 x 64).png-c7071b7f66f9ff8cb70be0c4bdbd75c3.ctex::
+Winter_details (16 x 16).png::CompressedTexture2D::3163918171417044189::1781698192::1781698364::1::::<><><>0<>0<>a03ed639405643bf2e44aa1156b981d2<>res://.godot/imported/Winter_details (16 x 16).png-677ee7d8e5c259a8927b41d534530039.ctex::
+Winter_gas_station (128 x 304).png::CompressedTexture2D::7779386053366275612::1781698192::1781698364::1::::<><><>0<>0<>66ac3c95946a25fb0296fe6ba63a6661<>res://.godot/imported/Winter_gas_station (128 x 304).png-76101698512cca5a5572ec520437d2e0.ctex::
+Winter_road (64 x 64).png::CompressedTexture2D::4580497633902541269::1781698192::1781698364::1::::<><><>0<>0<>58d4237accd37da5127974a0a7a517a4<>res://.godot/imported/Winter_road (64 x 64).png-37bfd8e2054b8c89e8bb59b1855778eb.ctex::
+::res://art/Mini Pixel Pack 2/Player sprite icons/::1781698364
+Carrot (32 x 32).png::CompressedTexture2D::4951992811063336512::1781698192::1781698364::1::::<><><>0<>0<>bc9e803f78e38541652ff9d7b11400f2<>res://.godot/imported/Carrot (32 x 32).png-98db973b3279d22382b39741265d4f5e.ctex::
+Cherry (32 x 32).png::CompressedTexture2D::5228197492292292566::1781698192::1781698364::1::::<><><>0<>0<>6ad578cf3f6169a541291cd4871a6268<>res://.godot/imported/Cherry (32 x 32).png-a3cd222b12d7d9097cbe171a74829b43.ctex::
+Cop (32 x 32).png::CompressedTexture2D::2230718337305115787::1781698192::1781698364::1::::<><><>0<>0<>6b45e8dacc2b5e7b831e4484ded53f1c<>res://.godot/imported/Cop (32 x 32).png-4371edf1bfe8cbd23669902d8ead8ed1.ctex::
+Lemon (32 x 32).png::CompressedTexture2D::7116171390912657400::1781698192::1781698364::1::::<><><>0<>0<>0f80f3d68823538486f64b13ecdad626<>res://.godot/imported/Lemon (32 x 32).png-d554535bc1689fb68b533a527c99b2e8.ctex::
+Slime (32 x 32).png::CompressedTexture2D::6649366292741890124::1781698192::1781698364::1::::<><><>0<>0<>1102b317d97fcc75526b9521d606b231<>res://.godot/imported/Slime (32 x 32).png-9f75aedadfcfb9d50dda9c1c45b3df9a.ctex::
+::res://art/Mini Pixel Pack 2/Props/::1781698364
+Misc_props (16 x 16).png::CompressedTexture2D::5115599806228445948::1781698192::1781698364::1::::<><><>0<>0<>18ccfde7b84908f5d14f0d41d491c106<>res://.godot/imported/Misc_props (16 x 16).png-7b88f4527d7b1623fd45cb2da0246004.ctex::
+Road_markings (16 x 16).png::CompressedTexture2D::192740286071966789::1781698192::1781698364::1::::<><><>0<>0<>5d436d237f1481df7f1b5893c1984144<>res://.godot/imported/Road_markings (16 x 16).png-27ce67f73b77aeb22bcd6a8d92e629d3.ctex::
+::res://art/Mini Pixel Pack 2/UI/::1781698364
+Damage_indicator (8 x 8).png::CompressedTexture2D::6270930967315664944::1781698192::1781698364::1::::<><><>0<>0<>9cdf1991ff96007027a8e0082ebf539d<>res://.godot/imported/Damage_indicator (8 x 8).png-04221d592e033c0e898a418594f1b6ca.ctex::
+Fuel_bar (16 x 56).png::CompressedTexture2D::124197459865973165::1781698192::1781698364::1::::<><><>0<>0<>90840344f364269388093a4cbdf01263<>res://.godot/imported/Fuel_bar (16 x 56).png-871e9acc88001df7242e315b880009a5.ctex::
+Main_UI (32 x 176).png::CompressedTexture2D::8171674766465263976::1781698192::1781698364::1::::<><><>0<>0<>931d9e82decd07316ceeab6103878e62<>res://.godot/imported/Main_UI (32 x 176).png-f6352e1b11b4ece01d9c2e051732b0e4.ctex::
+Player_arrow_indicator (8 x 8).png::CompressedTexture2D::265518452610492072::1781698192::1781698364::1::::<><><>0<>0<>1e95cc833e854eceab0124d362c6fe79<>res://.godot/imported/Player_arrow_indicator (8 x 8).png-b4764a6b148149f7681fdb62d770804a.ctex::
+Race_progress (8 x 8).png::CompressedTexture2D::1439699176090920143::1781698192::1781698364::1::::<><><>0<>0<>0e23ba8aacca8973e2f097a1a8d28c5d<>res://.godot/imported/Race_progress (8 x 8).png-afe9882e0f6258703d8acf53c501d94e.ctex::
+Speed_indicator_numbers (8 x 8).png::CompressedTexture2D::8444070656656126181::1781698192::1781698364::1::::<><><>0<>0<>88f9b7c6dea980876794c87c4b663a17<>res://.godot/imported/Speed_indicator_numbers (8 x 8).png-54d34975e8b386b29fc052a8ec6e3d4c.ctex::
+::res://fonts/::1781698363
+Pixeled.ttf::FontFile::1453311975852660790::1781698192::1781698363::1::::<><><>0<>0<>d7a778008ee236445030184f82f329ac<>res://.godot/imported/Pixeled.ttf-bf71e888a0c2660879e04460b97ec7e7.fontdata::
+::res://scenes/::1781698192
+blue_car.tscn::PackedScene::1648119562201092529::1781698192::0::1::::<><><>0<>0<><>::uid://bjflybcshmnt2::::res://blue_car.gd<>uid://cuqo11wecsn1::::res://art/blue_car/blue_car0.png<>uid://dv484cfya3o4a::::res://art/blue_car/blue_car1.png<>uid://cf61yty7l0prd::::res://art/blue_car/blue_car10.png<>uid://dsew3xqwpmuka::::res://art/blue_car/blue_car2.png<>uid://xskfp1jm38de::::res://art/blue_car/blue_car3.png<>uid://dlgweh33rx126::::res://art/blue_car/blue_car11.png<>uid://b46uwcdpxk325::::res://art/blue_car/blue_car12.png<>uid://b2f2010k2to31::::res://art/blue_car/blue_car4.png<>uid://v8nyijc02b8r::::res://art/blue_car/blue_car13.png<>uid://baatks22blapb::::res://art/blue_car/blue_car5.png<>uid://c2222t4iqao0g::::res://art/blue_car/blue_car6.png<>uid://bv1b4687nlggt::::res://art/blue_car/blue_car14.png<>uid://dw3xcmhosnjtd::::res://art/blue_car/blue_car15.png<>uid://x8r3jnivspw2::::res://art/blue_car/blue_car7.png<>uid://b4qlq6wk8w42q::::res://art/blue_car/blue_car8.png<>uid://bgwlvwwwnkhlo::::res://art/blue_car/blue_car9.png
+main.tscn::PackedScene::1094682227908925666::1781698192::0::1::::<><><>0<>0<><>::uid://c1q0hgfuyfl4h::::res://scenes/player.tscn<>uid://djif50y8jqafe::::res://main.gd<>uid://fy720x0mmewc::::res://scenes/monster.tscn<>uid://xqmj2negjvsr::::res://scenes/blue_car.tscn
+monster.tscn::PackedScene::402481794258209406::1781698192::0::1::::<><><>0<>0<><>::uid://oj17divtbgxi::::res://art/enemyFlyingAlt_1.png<>uid://b8un0wxkg84hu::::res://monster.gd<>uid://cr7xy2ie6c0jw::::res://art/enemyFlyingAlt_2.png<>uid://bsau4iwkuacso::::res://art/enemyWalking_1.png<>uid://bhfv53gjb7omt::::res://art/enemyWalking_2.png<>uid://c67ic3gmunu0e::::res://art/enemySwimming_1.png<>uid://cvk46334qacmi::::res://art/enemySwimming_2.png
+player.tscn::PackedScene::6632312095221610101::1781698192::0::1::::<><><>0<>0<><>::uid://2lfuoy0vnpic::::res://player.gd<>uid://dv6vqtqkey66r::::res://art/playerGrey_up1.png<>uid://bqoi0l8gbqlgx::::res://art/playerGrey_up2.png<>uid://b5gjnak6moji::::res://art/playerGrey_walk1.png<>uid://bteje73sl53r8::::res://art/playerGrey_walk2.png

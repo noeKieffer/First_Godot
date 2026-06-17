@@ -1,8 +1,8 @@
 extends Area2D
-signal hit
+#signal hit
 
 @export var max_speed = 300
-@export var speed = 0 #en 3 secondes (d'apres valentin)
+@export var speed = 0
 var screen_size
 var velocity = Vector2.ZERO
 
@@ -14,53 +14,52 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#var velocity = Vector2.ZERO
 
 	if !Input.is_action_pressed("handbrake"):
+		velocity = Vector2.ZERO
 		velocity.y -= cos(rotation)
 		velocity.x += sin(rotation)
-	if Input.is_action_pressed("move_forward"):
-		if speed < max_speed:
-			if speed < 0 || speed > max_speed * 2 / 3:
-				speed += 1.0
-			speed += 0.5
-		#if Input.is_action_pressed("turn_right"):
-			#rotation_degrees += 0.75
-		#elif Input.is_action_pressed("turn_left"):
-			#rotation_degrees -= 0.75
-	elif Input.is_action_pressed("move_back"):
-		if speed > -max_speed:
-			if speed > 0 || speed < -max_speed * 2 / 3:
+		if Input.is_action_pressed("move_forward"):
+			if speed < max_speed:
+				if speed < 0:
+					speed += 1.0
+				speed += 0.5
+		elif Input.is_action_pressed("move_back"): #need to find out why brake don't work when move_back
+			if speed > -max_speed:
+				if speed > 0:
+					speed -= 1.0
+				speed -= 0.5
+		else:
+			if speed > 0:
 				speed -= 1.0
-			speed -= 0.5
-		#if Input.is_action_pressed("turn_right"):
-			#rotation_degrees -= 0.75
-		#elif Input.is_action_pressed("turn_left"):
-			#rotation_degrees += 0.75
+			elif speed < 0:
+				speed += 1.0
 	else:
+		velocity.y -= cos(rotation)
+		velocity.x += sin(rotation)
 		if speed > 0:
 			speed -= 1.0
 		elif speed < 0:
 			speed += 1.0
-	#if speed > 200:
+
+	#direction
+	var degrees = 0
+	if 10 < speed:
+		degrees = (max_speed / 2 + speed / 2) / (2 * max_speed)
+	elif speed < -10:
+		degrees = -((max_speed / 2 + abs(speed) / 2) / (2 * max_speed))
 	if Input.is_action_pressed("turn_right"):
-		rotation_degrees += speed / 500
+		rotation_degrees += degrees
 	elif Input.is_action_pressed("turn_left"):
-		rotation_degrees -= speed / 500
-	#if speed < -200:
-		#if Input.is_action_pressed("turn_right"):
-			#rotation_degrees -= 0.75
-		#elif Input.is_action_pressed("turn_left"):
-			#rotation_degrees += 0.75
-	
-	#print(delta)
+		rotation_degrees -= degrees
+
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
 
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
-	
+
 	var rot8 = fmod(rotation, 2 * PI)
 	if rot8 < 0:
 		rot8 += 2 * PI

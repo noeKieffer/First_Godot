@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://xqmj2negjvsr"]
+
+[ext_resource type="Script" uid="uid://bjflybcshmnt2" path="res://blue_car.gd" id="1_p5b87"]
+[ext_resource type="Texture2D" uid="uid://cuqo11wecsn1" path="res://art/blue_car/blue_car0.png" id="2_5olxi"]
+[ext_resource type="Texture2D" uid="uid://dv484cfya3o4a" path="res://art/blue_car/blue_car1.png" id="3_rdm34"]
+[ext_resource type="Texture2D" uid="uid://cf61yty7l0prd" path="res://art/blue_car/blue_car10.png" id="4_e6ljr"]
+[ext_resource type="Texture2D" uid="uid://dsew3xqwpmuka" path="res://art/blue_car/blue_car2.png" id="4_lrlkp"]
+[ext_resource type="Texture2D" uid="uid://xskfp1jm38de" path="res://art/blue_car/blue_car3.png" id="5_lwqav"]
+[ext_resource type="Texture2D" uid="uid://dlgweh33rx126" path="res://art/blue_car/blue_car11.png" id="5_yfpfm"]
+[ext_resource type="Texture2D" uid="uid://b46uwcdpxk325" path="res://art/blue_car/blue_car12.png" id="6_ggdl3"]
+[ext_resource type="Texture2D" uid="uid://b2f2010k2to31" path="res://art/blue_car/blue_car4.png" id="6_o17r0"]
+[ext_resource type="Texture2D" uid="uid://v8nyijc02b8r" path="res://art/blue_car/blue_car13.png" id="7_2v8tp"]
+[ext_resource type="Texture2D" uid="uid://baatks22blapb" path="res://art/blue_car/blue_car5.png" id="7_gvdmi"]
+[ext_resource type="Texture2D" uid="uid://c2222t4iqao0g" path="res://art/blue_car/blue_car6.png" id="8_pyum1"]
+[ext_resource type="Texture2D" uid="uid://bv1b4687nlggt" path="res://art/blue_car/blue_car14.png" id="8_ssbx5"]
+[ext_resource type="Texture2D" uid="uid://dw3xcmhosnjtd" path="res://art/blue_car/blue_car15.png" id="9_blrst"]
+[ext_resource type="Texture2D" uid="uid://x8r3jnivspw2" path="res://art/blue_car/blue_car7.png" id="9_rexqv"]
+[ext_resource type="Texture2D" uid="uid://b4qlq6wk8w42q" path="res://art/blue_car/blue_car8.png" id="16_ort0f"]
+[ext_resource type="Texture2D" uid="uid://bgwlvwwwnkhlo" path="res://art/blue_car/blue_car9.png" id="17_6sffa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e6ljr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5olxi")
+}],
+"loop": true,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rdm34")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_e6ljr")
+}],
+"loop": true,
+"name": &"10",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yfpfm")
+}],
+"loop": true,
+"name": &"11",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ggdl3")
+}],
+"loop": true,
+"name": &"12",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_2v8tp")
+}],
+"loop": true,
+"name": &"13",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ssbx5")
+}],
+"loop": true,
+"name": &"14",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_blrst")
+}],
+"loop": true,
+"name": &"15",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lrlkp")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_lwqav")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_o17r0")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_gvdmi")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_pyum1")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_rexqv")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_ort0f")
+}],
+"loop": true,
+"name": &"8",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_6sffa")
+}],
+"loop": true,
+"name": &"9",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5b87"]
+size = Vector2(8, 12)
+
+[node name="Blue_car" type="Area2D" unique_id=1880255409]
+script = ExtResource("1_p5b87")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2146233848]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_e6ljr")
+animation = &"15"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137341217]
+shape = SubResource("RectangleShape2D_p5b87")

@@ -1,2 +1,5 @@
 res://blue_car.gd
+res://scenes/map.tscn
 res://scenes/main.tscn
+res://main.gd
+res://scenes/blue_car.tscn

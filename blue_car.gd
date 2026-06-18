@@ -1,8 +1,10 @@
 extends Area2D
 #signal hit
 
-@export var max_speed = 300
+@export var max_speed = 600
 @export var speed = 0
+var acceleration = 20
+var rotation_factor = 8
 var screen_size
 var velocity = Vector2.ZERO
 
@@ -17,44 +19,56 @@ func _process(delta: float) -> void:
 
 	if !Input.is_action_pressed("handbrake"):
 		velocity = Vector2.ZERO
-		velocity.y -= cos(rotation)
-		velocity.x += sin(rotation)
+		velocity.x += sin(rotation)#toujours entre 0 et 1
+		velocity.y -= cos(rotation)#toujours entre 0 et 1
+
 		if Input.is_action_pressed("move_forward"):
 			if speed < max_speed:
 				if speed < 0:
-					speed += 1.0
-				speed += 0.5
+					speed += 2 * acceleration
+				speed += acceleration
 		elif Input.is_action_pressed("move_back"): #need to find out why brake don't work when move_back
 			if speed > -max_speed:
 				if speed > 0:
-					speed -= 1.0
-				speed -= 0.5
+					speed -= 2 * acceleration
+				speed -= acceleration
 		else:
 			if speed > 0:
-				speed -= 1.0
+				speed -= acceleration
+				if speed < acceleration:
+					speed = 0 
 			elif speed < 0:
-				speed += 1.0
+				speed += acceleration
+				if speed > -acceleration:
+					speed = 0 
 	else:
-		velocity.y -= cos(rotation)
+		if speed < 0:
+			velocity = -velocity
 		velocity.x += sin(rotation)
+		velocity.y -= cos(rotation)
+		
 		if speed > 0:
-			speed -= 1.0
-		elif speed < 0:
-			speed += 1.0
+			speed -= acceleration
+			if speed < acceleration:
+				speed = 0 
+		if speed < 0:
+			speed += acceleration
+			if speed > -acceleration:
+				speed = 0 
 
 	#direction
 	var degrees = 0
-	if 10 < speed:
-		degrees = (max_speed / 2 + speed / 2) / (2 * max_speed)
-	elif speed < -10:
-		degrees = -((max_speed / 2 + abs(speed) / 2) / (2 * max_speed))
+	if acceleration < speed:
+		degrees = rotation_factor * (max_speed / 2 + speed / 2) / (2 * max_speed)
+	elif speed < -acceleration:
+		degrees = -(rotation_factor * (max_speed / 2 + abs(speed) / 2) / (2 * max_speed))
 	if Input.is_action_pressed("turn_right"):
 		rotation_degrees += degrees
 	elif Input.is_action_pressed("turn_left"):
 		rotation_degrees -= degrees
 
 
-	if velocity.length() > 0:
+	if velocity.length() > 0:   
 		velocity = velocity.normalized() * speed
 
 	position += velocity * delta

@@ -15,18 +15,13 @@ func _process(delta: float) -> void:
 
 func game_over() -> void:
 	$ScoreTimer.stop()
-	$MonsterTimer.stop()
 
 
 func new_game():
 	score = 0
 	$Blue_car.start($StartPosition.position)
-	$StartTimer.start()
 
 
-func _on_start_timer_timeout() -> void:
-	$MonsterTimer.start()
-	$ScoreTimer.start()
 
 
 func _on_score_timer_timeout() -> void:

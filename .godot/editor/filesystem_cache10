@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781702385
-blue_car.gd::GDScript::3029152967620478309::1781702149::0::1::::<>Area2D<><>0<>0<><>::
+::res://::1781783874
+blue_car.gd::GDScript::3029152967620478309::1781783874::0::1::::<>Area2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::2897966337619819757::1781698192::1781698364::1::::<><><>0<>0<>0d44fed6ef3e93c8897faaf51ba68eb6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main.gd::GDScript::7807835176306136670::1781698192::0::1::::<>Node<><>0<>0<><>::
 monster.gd::GDScript::4744775236090859486::1781698192::0::1::::<>RigidBody2D<><>0<>0<><>::
@@ -46,10 +46,11 @@ Player_green (16 x 16).png::CompressedTexture2D::4083904063977271471::1781698192
 Player_red (16 x 16).png::CompressedTexture2D::3905705388545663588::1781698192::1781698364::1::::<><><>0<>0<>b90c28ae35bdbeb6170fa964ef84b340<>res://.godot/imported/Player_red (16 x 16).png-73d85116500a5d14e2fcd406a07f3234.ctex::
 Player_yellow (16 x 16).png::CompressedTexture2D::4174884932012897841::1781698192::1781698364::1::::<><><>0<>0<>1d903f6c88ad41c1944ea8c8cbe00bb3<>res://.godot/imported/Player_yellow (16 x 16).png-4476201471a1a6796af6409f398a6030.ctex::
 Police (16 x 16).png::CompressedTexture2D::423517929673732964::1781698192::1781698364::1::::<><><>0<>0<>49966d7037db3c0d38f86addfbd64f60<>res://.godot/imported/Police (16 x 16).png-20fe858c8352f9ac3c7adaa0177f3982.ctex::
-::res://art/Mini Pixel Pack 2/Levels/::1781698364
+::res://art/Mini Pixel Pack 2/Levels/::1781785187
 Desert_details (16 x 16).png::CompressedTexture2D::5670375789178387181::1781698192::1781698364::1::::<><><>0<>0<>2c410662145af848a26deeb34d356014<>res://.godot/imported/Desert_details (16 x 16).png-9fe2ed61092d89c388dc865918a7c807.ctex::
 Desert_gas_station (128 x 304).png::CompressedTexture2D::2031070884600001548::1781698192::1781698364::1::::<><><>0<>0<>f2397b41d4a73f004f177bc21cc0ab8b<>res://.godot/imported/Desert_gas_station (128 x 304).png-6b050d755e5e7310e5b0789a4571cd82.ctex::
 Desert_road (64 x 64).png::CompressedTexture2D::1225954015236357229::1781698192::1781698364::1::::<><><>0<>0<>dca0eca71f213e411748e3f84eab0f35<>res://.godot/imported/Desert_road (64 x 64).png-2b907150cd950ca6869d3decb32c2af2.ctex::
+Desert_road_turn.png::CompressedTexture2D::221574200167370770::1781785187::1781785187::1::::<><><>0<>0<>12f66393534b5b9b9d0a1de2ab389807<>res://.godot/imported/Desert_road_turn.png-dde20e30e0b837599a1670da1721bc14.ctex::
 Highway_gas_station (176 x 352).png::CompressedTexture2D::984982277491834628::1781698192::1781698364::1::::<><><>0<>0<>33e311770d8d91e1fb478edc4c8fd6f8<>res://.godot/imported/Highway_gas_station (176 x 352).png-652e9ba47d020d1b069bb49188acb3be.ctex::
 Highway_road (96 x 64).png::CompressedTexture2D::4864290808676008959::1781698192::1781698364::1::::<><><>0<>0<>8ce70586182b1a6f571b38175f00678b<>res://.godot/imported/Highway_road (96 x 64).png-63d03f07298f73b3ce91505485bfe3c4.ctex::
 Highway_water_animation (16 x 16).png::CompressedTexture2D::3527870335479741781::1781698192::1781698364::1::::<><><>0<>0<>85207fcb4cbb2743ac7019cb1f0001d9<>res://.godot/imported/Highway_water_animation (16 x 16).png-85723de49697e51f61446d9ef5269bde.ctex::
@@ -78,8 +79,9 @@ Race_progress (8 x 8).png::CompressedTexture2D::1439699176090920143::1781698192:
 Speed_indicator_numbers (8 x 8).png::CompressedTexture2D::8444070656656126181::1781698192::1781698364::1::::<><><>0<>0<>88f9b7c6dea980876794c87c4b663a17<>res://.godot/imported/Speed_indicator_numbers (8 x 8).png-54d34975e8b386b29fc052a8ec6e3d4c.ctex::
 ::res://fonts/::1781698363
 Pixeled.ttf::FontFile::1453311975852660790::1781698192::1781698363::1::::<><><>0<>0<>d7a778008ee236445030184f82f329ac<>res://.godot/imported/Pixeled.ttf-bf71e888a0c2660879e04460b97ec7e7.fontdata::
-::res://scenes/::1781698192
+::res://scenes/::1781783874
 blue_car.tscn::PackedScene::1648119562201092529::1781698192::0::1::::<><><>0<>0<><>::uid://bjflybcshmnt2::::res://blue_car.gd<>uid://cuqo11wecsn1::::res://art/blue_car/blue_car0.png<>uid://dv484cfya3o4a::::res://art/blue_car/blue_car1.png<>uid://cf61yty7l0prd::::res://art/blue_car/blue_car10.png<>uid://dsew3xqwpmuka::::res://art/blue_car/blue_car2.png<>uid://xskfp1jm38de::::res://art/blue_car/blue_car3.png<>uid://dlgweh33rx126::::res://art/blue_car/blue_car11.png<>uid://b46uwcdpxk325::::res://art/blue_car/blue_car12.png<>uid://b2f2010k2to31::::res://art/blue_car/blue_car4.png<>uid://v8nyijc02b8r::::res://art/blue_car/blue_car13.png<>uid://baatks22blapb::::res://art/blue_car/blue_car5.png<>uid://c2222t4iqao0g::::res://art/blue_car/blue_car6.png<>uid://bv1b4687nlggt::::res://art/blue_car/blue_car14.png<>uid://dw3xcmhosnjtd::::res://art/blue_car/blue_car15.png<>uid://x8r3jnivspw2::::res://art/blue_car/blue_car7.png<>uid://b4qlq6wk8w42q::::res://art/blue_car/blue_car8.png<>uid://bgwlvwwwnkhlo::::res://art/blue_car/blue_car9.png
-main.tscn::PackedScene::1094682227908925666::1781698192::0::1::::<><><>0<>0<><>::uid://c1q0hgfuyfl4h::::res://scenes/player.tscn<>uid://djif50y8jqafe::::res://main.gd<>uid://fy720x0mmewc::::res://scenes/monster.tscn<>uid://xqmj2negjvsr::::res://scenes/blue_car.tscn
+main.tscn::PackedScene::1094682227908925666::1781710259::0::1::::<><><>0<>0<><>::uid://c1q0hgfuyfl4h::::res://scenes/player.tscn<>uid://djif50y8jqafe::::res://main.gd<>uid://fy720x0mmewc::::res://scenes/monster.tscn<>uid://xqmj2negjvsr::::res://scenes/blue_car.tscn
 monster.tscn::PackedScene::402481794258209406::1781698192::0::1::::<><><>0<>0<><>::uid://oj17divtbgxi::::res://art/enemyFlyingAlt_1.png<>uid://b8un0wxkg84hu::::res://monster.gd<>uid://cr7xy2ie6c0jw::::res://art/enemyFlyingAlt_2.png<>uid://bsau4iwkuacso::::res://art/enemyWalking_1.png<>uid://bhfv53gjb7omt::::res://art/enemyWalking_2.png<>uid://c67ic3gmunu0e::::res://art/enemySwimming_1.png<>uid://cvk46334qacmi::::res://art/enemySwimming_2.png
 player.tscn::PackedScene::6632312095221610101::1781698192::0::1::::<><><>0<>0<><>::uid://2lfuoy0vnpic::::res://player.gd<>uid://dv6vqtqkey66r::::res://art/playerGrey_up1.png<>uid://bqoi0l8gbqlgx::::res://art/playerGrey_up2.png<>uid://b5gjnak6moji::::res://art/playerGrey_walk1.png<>uid://bteje73sl53r8::::res://art/playerGrey_walk2.png
+map.tscn::PackedScene::334721986628049047::1781783874::0::1::::<><><>0<>0<><>::

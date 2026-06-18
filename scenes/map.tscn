@@ -1,0 +1,52 @@
+[gd_scene format=4 uid="uid://e1e27qng3lh4"]
+
+[ext_resource type="Texture2D" uid="uid://rp4jv0ly54v6" path="res://art/Mini Pixel Pack 2/Levels/Desert_road (64 x 64).png" id="1_paxxb"]
+[ext_resource type="Texture2D" uid="uid://dflkaxcbt84m" path="res://art/Mini Pixel Pack 2/Levels/Desert_road_turn.png" id="2_gldc4"]
+[ext_resource type="Texture2D" uid="uid://cm11i4qkn8w82" path="res://art/Mini Pixel Pack 2/Levels/Desert_details (16 x 16).png" id="3_gldc4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0cso3"]
+texture = ExtResource("1_paxxb")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2klcf"]
+texture = ExtResource("2_gldc4")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2lpho"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_0cso3")
+sources/1 = SubResource("TileSetAtlasSource_2klcf")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lpho"]
+texture = ExtResource("3_gldc4")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.6484556, -1.7837219, -2.1801062, -5.6484547, 4.162019, -5.747551, 6.342124, -2.2792006, 7.0732555, 2.2539763, 2.6755838, 5.9457417, -1.2882442, 5.8466473, -5.2520723, 1.6846275)
+3:0/0/physics_layer_0/polygon_0/one_way = true
+
+[sub_resource type="TileSet" id="TileSet_nakos"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_2lpho")
+
+[node name="desert_map" type="Node2D" unique_id=1943891114]
+texture_filter = 1
+scale = Vector2(5, 5)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=361422985]
+tile_set = SubResource("TileSet_2lpho")
+format = 2
+
+[node name="road" type="TileMapLayer" parent="TileMap" unique_id=2068856673]
+use_parent_material = true
+position = Vector2(16, 16)
+tile_map_data = PackedByteArray("AAACAAEAAAAAAAAAAAACAAAAAQAAAAAAAAABAAAAAAAAAAAAAFAAAAAAAQAAAAAAABAAAAIAAQAAAAAAADACAAIAAQAAAAAAACAAAAEAAAAAAAAAADABAAIAAAAAAAAAAGA=")
+tile_set = SubResource("TileSet_2lpho")
+
+[node name="props" type="TileMapLayer" parent="TileMap" unique_id=6922779]
+tile_map_data = PackedByteArray("AAAGAAUAAAACAAAAAAAHAAcAAAACAAAAAAAFAAUAAAABAAAAAAAFAAcAAAABAAAAAAAGAAYAAAABAAAAAAAHAAUAAAABAAAAAAAHAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAGAAcAAAAAAAAAAAAAAAAAAAADAAAAAAABAAAAAAADAAAAAAACAAAAAAADAAAAAAADAAAAAAADAAAAAAAEAAAAAAADAAAAAAAFAAAAAAADAAAAAAAGAAAAAAADAAAAAAAHAAAAAAADAAAAAAAIAAAAAAADAAAAAAAJAAAAAAADAAAAAAAKAAAAAAADAAAAAAALAAAAAAADAAAAAAAMAAAAAAADAAAAAAANAAAAAAADAAAAAAANAAEAAAADAAAAAAANAAIAAAADAAAAAAANAAMAAAADAAAAAAANAAQAAAADAAAAAAANAAUAAAADAAAAAAANAAYAAAADAAAAAAANAAcAAAADAAAAAAANAAgAAAADAAAAAAANAAkAAAADAAAAAAANAAoAAAADAAAAAAANAAsAAAADAAAAAAANAAwAAAADAAAAAAANAA0AAAADAAAAAAAMAA0AAAADAAAAAAALAA0AAAADAAAAAAAKAA0AAAADAAAAAAAJAA0AAAADAAAAAAAIAA0AAAADAAAAAAAHAA0AAAADAAAAAAAGAA0AAAADAAAAAAAFAA0AAAADAAAAAAAEAA0AAAADAAAAAAADAA0AAAADAAAAAAACAA0AAAADAAAAAAABAA0AAAADAAAAAAAAAA0AAAADAAAAAAAAAAwAAAADAAAAAAAAAAsAAAADAAAAAAAAAAoAAAADAAAAAAAAAAkAAAADAAAAAAAAAAgAAAADAAAAAAAAAAcAAAADAAAAAAAAAAYAAAADAAAAAAAAAAUAAAADAAAAAAAAAAQAAAADAAAAAAAAAAMAAAADAAAAAAAAAAIAAAADAAAAAAAAAAEAAAADAAAAAAAFAAgAAAACAAAAAAAIAAYAAAACAAAAAAAHAAgAAAABAAAAAAAIAAUAAAABAAAAAAAIAAcAAAABAAAAAAAGAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_nakos")
+collision_visibility_mode = 1

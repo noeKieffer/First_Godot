@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 #signal hit
 
 @export var max_speed = 600
@@ -6,16 +6,17 @@ extends Area2D
 var acceleration = 20
 var rotation_factor = 8
 var screen_size
-var velocity = Vector2.ZERO
+#var velocity = Vector2.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	hide()
+	velocity = Vector2.ZERO
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 
 	if !Input.is_action_pressed("handbrake"):
 		velocity = Vector2.ZERO
@@ -59,9 +60,9 @@ func _process(delta: float) -> void:
 	#direction
 	var degrees = 0
 	if acceleration < speed:
-		degrees = rotation_factor * (max_speed / 2 + speed / 2) / (2 * max_speed)
+		degrees = rotation_factor * (max_speed / 2.0 + speed / 2.0) / (2.0 * max_speed)
 	elif speed < -acceleration:
-		degrees = -(rotation_factor * (max_speed / 2 + abs(speed) / 2) / (2 * max_speed))
+		degrees = -(rotation_factor * (max_speed / 2.0 + abs(speed) / 2.0) / (2.0 * max_speed))
 	if Input.is_action_pressed("turn_right"):
 		rotation_degrees += degrees
 	elif Input.is_action_pressed("turn_left"):
@@ -71,8 +72,11 @@ func _process(delta: float) -> void:
 	if velocity.length() > 0:   
 		velocity = velocity.normalized() * speed
 
-	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
+	#if move_and_slide():
+		#speed = 0
+	move_and_collide(velocity * delta)
+	#position += velocity * delta
+	#position = position.clamp(Vector2.ZERO, screen_size)
 
 	var rot8 = fmod(rotation, 2 * PI)
 	if rot8 < 0:

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dflkaxcbt84m"
-path="res://.godot/imported/Desert_road_turn.png-dde20e30e0b837599a1670da1721bc14.ctex"
+uid="uid://ch7suicsh3eqy"
+path="res://.godot/imported/desert_sprite_sheet.png-14e3229cfd65e36ce874b6cd0b612987.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Mini Pixel Pack 2/Levels/Desert_road_turn.png"
-dest_files=["res://.godot/imported/Desert_road_turn.png-dde20e30e0b837599a1670da1721bc14.ctex"]
+source_file="res://art/Mini Pixel Pack 2/Levels/desert_sprite_sheet.png"
+dest_files=["res://.godot/imported/desert_sprite_sheet.png-14e3229cfd65e36ce874b6cd0b612987.ctex"]
 
 [params]
 

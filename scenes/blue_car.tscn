@@ -152,11 +152,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p5b87"]
 size = Vector2(8, 12)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e6ljr"]
-radius = 8.0
-height = 20.0
-
-[node name="Blue_car" type="Area2D" unique_id=1880255409]
+[node name="Blue_car" type="CharacterBody2D" unique_id=852419326]
+collision_mask = 2
 script = ExtResource("1_p5b87")
 metadata/_edit_group_ = true
 
@@ -168,13 +165,9 @@ animation = &"15"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137341217]
 shape = SubResource("RectangleShape2D_p5b87")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=209072994]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=66801382]
 position = Vector2(0, 2)
 limit_left = 0
 limit_top = 0
-limit_right = 1120
-limit_bottom = 1120
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=302088931]
-physics_interpolation_mode = 1
-shape = SubResource("CapsuleShape2D_e6ljr")
+limit_right = 2160
+limit_bottom = 2160

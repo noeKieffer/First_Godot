@@ -1,6 +1,5 @@
 extends Node
 
-@export var monster_scene: PackedScene
 var score
 
 # Called when the node enters the scene tree for the first time.
@@ -19,6 +18,10 @@ func game_over() -> void:
 
 func new_game():
 	score = 0
+	var star_rot = $desert_map/start_line.rotation
+	var start_size = $desert_map/start_line/CollisionShape2D.shape.get_rect().size.x + $desert_map/start_line/CollisionShape2D.shape.get_rect().size.y
+	var start_center = Vector2(((start_size / 2) * -sin(star_rot)) - (10 * cos(star_rot)), ((start_size / 2) * cos(star_rot)) + (10 * -sin(star_rot)))
+	$StartPosition.position = ($desert_map/start_line.position + start_center) * 5
 	$Blue_car.start($StartPosition.position)
 
 
@@ -26,20 +29,3 @@ func new_game():
 
 func _on_score_timer_timeout() -> void:
 	score += 1
-
-
-#func _on_monster_timer_timeout() -> void:
-	#$MonsterTimer.wait_time = 0.5 - score * 0.005
-	#var monster = monster_scene.instantiate()
-	#
-	#var monster_spawn_location = get_node("MonsterPath/MonsterSpawnLocation")
-	#monster_spawn_location.progress_ratio = randf()
-	#
-	#var direction = monster_spawn_location.rotation + PI / 2
-	#
-	#monster.position = monster_spawn_location.position
-	#
-	#var velocity = Vector2(randf_range(150.0, 250.0 + score * 2), 0.0)
-	#monster.linear_velocity = velocity.rotated(direction)
-	#
-	#add_child(monster)

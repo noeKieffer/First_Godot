@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bj6e643tu02cs"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xam77"]
+b = Vector2(0, 48)
+
+[node name="checkpoint" type="Area2D" unique_id=1220990223]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1315452622]
+shape = SubResource("SegmentShape2D_xam77")

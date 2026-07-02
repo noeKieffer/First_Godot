@@ -1,6 +1,7 @@
+CollisionShape2D
+Area2D
 Camera2D
 TileMapLayer
 CharacterBody2D
-CollisionShape2D
 TileMap
 Node2D

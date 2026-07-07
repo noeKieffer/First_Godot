@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://e1e27qng3lh4"]
 
+[ext_resource type="Script" uid="uid://cxy1qldsgims4" path="res://scripts/map.gd" id="1_2klcf"]
 [ext_resource type="Texture2D" uid="uid://carpay2atmop" path="res://art/Mini Pixel Pack 2/Levels/desert_road_sheet.png" id="2_paxxb"]
-[ext_resource type="Texture2D" uid="uid://cyln0xr5ciqdl" path="res://art/Mini Pixel Pack 2/Props/props.png" id="3_0cso3"]
 [ext_resource type="Texture2D" uid="uid://cm11i4qkn8w82" path="res://art/Mini Pixel Pack 2/Levels/Desert_details (16 x 16).png" id="3_gldc4"]
 [ext_resource type="PackedScene" uid="uid://2pp6qr5w4uni" path="res://scenes/start_line.tscn" id="4_0cso3"]
 [ext_resource type="PackedScene" uid="uid://bj6e643tu02cs" path="res://scenes/checkpoint.tscn" id="5_2klcf"]
@@ -66,48 +66,10 @@ terrain_set_0/terrain_0/name = "neibourgh"
 terrain_set_0/terrain_0/color = Color(0.67670923, 2.055183e-05, 0.4911517, 1)
 sources/0 = SubResource("TileSetAtlasSource_2klcf")
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_gldc4"]
-tile_data = PackedInt32Array(0, 393216, 1, 1, 393216, 1, 2, 393216, 1)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_0cso3"]
-tile_data = PackedInt32Array(0, 458752, 0, 1, 458752, 0, 2, 458752, 0)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_2klcf"]
-tile_data = PackedInt32Array(0, 393216, 65537, 65536, 393216, 65537, 131072, 393216, 65537)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_2lpho"]
-tile_data = PackedInt32Array(0, 458752, 1342177280, 65536, 458752, 1342177280, 131072, 458752, 1342177280)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lpho"]
-texture = ExtResource("3_0cso3")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/next_alternative_id = 2
-7:0/0 = 0
-7:0/1 = 1
-7:0/1/transpose = true
-5:1/0 = 0
-6:1/next_alternative_id = 2
-6:1/0 = 0
-6:1/1 = 1
-6:1/1/transpose = true
-7:1/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_nakos"]
-sources/0 = SubResource("TileSetAtlasSource_2lpho")
-pattern_0 = SubResource("TileMapPattern_gldc4")
-pattern_1 = SubResource("TileMapPattern_0cso3")
-pattern_2 = SubResource("TileMapPattern_2klcf")
-pattern_3 = SubResource("TileMapPattern_2lpho")
-
 [node name="desert_map" type="Node2D" unique_id=1943891114]
 texture_filter = 1
 scale = Vector2(5, 5)
+script = ExtResource("1_2klcf")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=361422985]
 format = 2
@@ -123,35 +85,31 @@ scale = Vector2(0.9999998, 0.9999998)
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAACAAAAAAADAAAAAAAAAAAAAAAEAAAAAAACAAAAAAAEAAEAAAAAAAEAAAAFAAEAAAACAAAAAAAFAAIAAAABAAEAAAAFAAMAAAACAAEAAAAEAAMAAAAAAAAAAAAEAAQAAAACAAEAAAADAAQAAAAAAAAAAAABAAQAAAACAAAAAAAAAAQAAAAAAAEAAAAAAAMAAAABAAEAAAAAAAIAAAABAAEAAAAAAAEAAAABAAEAAAADAAUAAAACAAEAAAACAAUAAAABAAAAAAABAAUAAAAAAAEAAAADAAEAAAACAAEAAAACAAEAAAABAAAAAAABAAEAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_2lpho")
 
-[node name="props" type="TileMapLayer" parent="TileMap" unique_id=743653122]
-position = Vector2(8, 8)
-scale = Vector2(0.9999998, 0.9999998)
-tile_map_data = PackedByteArray("AAABAA8AAAAGAAEAAAACAA8AAAAGAAEAAAADAA8AAAAGAAEAAAAEAAMAAAAGAAEAAQAEAAIAAAAGAAEAAQAEAAEAAAAGAAEAAQAQAAMAAAAGAAEAAQAQAAIAAAAGAAEAAQAQAAEAAAAGAAEAAQARABAAAAAGAAEAAAASABAAAAAGAAEAAAATABAAAAAGAAEAAAAVAAoAAAAHAAAAAAAWAAoAAAAHAAAAAAAXAAoAAAAHAAAAAAAKABUAAAAGAAEAAQAKABYAAAAGAAEAAQAKABcAAAAGAAEAAQAKAAYAAAAGAAEAAQAKAAUAAAAGAAEAAQAKAAcAAAAGAAEAAQA=")
-tile_set = SubResource("TileSet_nakos")
-
 [node name="start_line" parent="." unique_id=663340452 instance=ExtResource("4_0cso3")]
 position = Vector2(344, 176)
 rotation = -1.5707964
 
-[node name="1" parent="." unique_id=1220990223 instance=ExtResource("5_2klcf")]
+[node name="1" parent="." unique_id=1220990223 groups=["checkpoints"] instance=ExtResource("5_2klcf")]
 position = Vector2(272, 72)
 rotation = 3.1415927
 
-[node name="2" parent="." unique_id=1189758317 instance=ExtResource("5_2klcf")]
+[node name="2" parent="." unique_id=1189758317 groups=["checkpoints"] instance=ExtResource("5_2klcf")]
 position = Vector2(176, 136)
 rotation = 3.1415927
 
-[node name="3" parent="." unique_id=1778934387 instance=ExtResource("5_2klcf")]
+[node name="3" parent="." unique_id=1778934387 groups=["checkpoints"] instance=ExtResource("5_2klcf")]
 position = Vector2(80, 72)
 rotation = 3.1415927
 
-[node name="4" parent="." unique_id=2068116423 instance=ExtResource("5_2klcf")]
+[node name="4" parent="." unique_id=2068116423 groups=["checkpoints"] instance=ExtResource("5_2klcf")]
 position = Vector2(72, 256)
 rotation = 1.5707964
 
-[node name="5" parent="." unique_id=1489438974 instance=ExtResource("5_2klcf")]
+[node name="5" parent="." unique_id=1489438974 groups=["checkpoints"] instance=ExtResource("5_2klcf")]
 position = Vector2(176, 344)
 
-[node name="6" parent="." unique_id=867216454 instance=ExtResource("5_2klcf")]
+[node name="6" parent="." unique_id=867216454 groups=["checkpoints"] instance=ExtResource("5_2klcf")]
 position = Vector2(280, 272)
 rotation = -1.5707964
+
+[connection signal="body_entered" from="start_line" to="." method="_new_turn"]

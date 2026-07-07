@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0mn0ov85hw4"
-path="res://.godot/imported/Road_markings (16 x 16).png-27ce67f73b77aeb22bcd6a8d92e629d3.ctex"
+uid="uid://cf5wnrec7n27f"
+path="res://.godot/imported/pixil-frame-0(15).png-0ca16cc70410eb5d51c8800977ad36c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Mini Pixel Pack 2/Props/Road_markings (16 x 16).png"
-dest_files=["res://.godot/imported/Road_markings (16 x 16).png-27ce67f73b77aeb22bcd6a8d92e629d3.ctex"]
+source_file="res://art/Mini Pixel Pack 2/Props/pixil-frame-0(15).png"
+dest_files=["res://.godot/imported/pixil-frame-0(15).png-0ca16cc70410eb5d51c8800977ad36c8.ctex"]
 
 [params]
 

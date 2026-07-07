@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xqmj2negjvsr"]
 
-[ext_resource type="Script" uid="uid://bjflybcshmnt2" path="res://blue_car.gd" id="1_p5b87"]
+[ext_resource type="Script" uid="uid://bjflybcshmnt2" path="res://scripts/blue_car.gd" id="1_p5b87"]
 [ext_resource type="Texture2D" uid="uid://cuqo11wecsn1" path="res://art/blue_car/blue_car0.png" id="2_5olxi"]
 [ext_resource type="Texture2D" uid="uid://dv484cfya3o4a" path="res://art/blue_car/blue_car1.png" id="3_rdm34"]
 [ext_resource type="Texture2D" uid="uid://cf61yty7l0prd" path="res://art/blue_car/blue_car10.png" id="4_e6ljr"]
@@ -164,10 +164,3 @@ animation = &"15"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137341217]
 shape = SubResource("RectangleShape2D_p5b87")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=66801382]
-position = Vector2(0, 2)
-limit_left = 0
-limit_top = 0
-limit_right = 2160
-limit_bottom = 2160

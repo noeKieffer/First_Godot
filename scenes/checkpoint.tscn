@@ -1,9 +1,23 @@
 [gd_scene format=3 uid="uid://bj6e643tu02cs"]
 
+[ext_resource type="Script" uid="uid://bpxmm4v5272vp" path="res://scripts/checkpoint.gd" id="1_ywqth"]
+[ext_resource type="Texture2D" uid="uid://cf5wnrec7n27f" path="res://art/Mini Pixel Pack 2/Props/pixil-frame-0(15).png" id="1_yyywg"]
+
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_xam77"]
 b = Vector2(0, 48)
 
 [node name="checkpoint" type="Area2D" unique_id=1220990223]
+script = ExtResource("1_ywqth")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1143488666]
+texture_filter = 1
+position = Vector2(0, 24)
+rotation = 1.5707964
+texture = ExtResource("1_yyywg")
+region_enabled = true
+region_rect = Rect2(0, 22, 48, 4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1315452622]
 shape = SubResource("SegmentShape2D_xam77")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

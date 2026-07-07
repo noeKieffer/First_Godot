@@ -1,13 +1,11 @@
 [gd_scene format=3 uid="uid://pujiyl6hacf7"]
 
-[ext_resource type="Script" uid="uid://djif50y8jqafe" path="res://main.gd" id="1_sugp2"]
-[ext_resource type="PackedScene" uid="uid://fy720x0mmewc" path="res://scenes/monster.tscn" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://djif50y8jqafe" path="res://scripts/main.gd" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://xqmj2negjvsr" path="res://scenes/blue_car.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://e1e27qng3lh4" path="res://scenes/map.tscn" id="4_tbgi4"]
 
 [node name="Main" type="Node" unique_id=1200729674]
 script = ExtResource("1_sugp2")
-monster_scene = ExtResource("2_jyhfs")
 
 [node name="ScoreTimer" type="Timer" parent="." unique_id=1253222205]
 
@@ -20,4 +18,40 @@ position = Vector2(880, 700)
 position = Vector2(-0.99999994, 0.9999999)
 scale = Vector2(5, 5)
 
+[node name="CanvasLayer" type="CanvasLayer" parent="Blue_car" unique_id=1495868500]
+
+[node name="LapTimerLabel" type="Label" parent="Blue_car/CanvasLayer" unique_id=1411050686]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -101.5
+offset_top = 100.0
+offset_right = 101.5
+offset_bottom = 169.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.106236584, 0.10623657, 0.10623657, 1)
+theme_override_font_sizes/font_size = 50
+
+[node name="LastTurnLabel" type="Label" parent="Blue_car/CanvasLayer" unique_id=1392024466]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 90.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
+
+[node name="BestTurnLabel" type="Label" parent="Blue_car/CanvasLayer" unique_id=2137403053]
+offset_left = 50.0
+offset_top = 70.0
+offset_right = 90.0
+offset_bottom = 93.0
+theme_override_colors/font_color = Color(0.106236584, 0.10623657, 0.10623657, 1)
+
+[node name="Camera2D" type="Camera2D" parent="Blue_car" unique_id=1730621423]
+position = Vector2(0, 10)
+limit_left = 0
+limit_top = 0
+limit_right = 2160
+limit_bottom = 2160
+
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="start_line_pass" from="desert_map" to="." method="_new_turn"]

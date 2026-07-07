@@ -1,9 +1,23 @@
 [gd_scene format=3 uid="uid://2pp6qr5w4uni"]
 
+[ext_resource type="Script" uid="uid://clgu4hbweo46m" path="res://scripts/start_line.gd" id="1_vun7t"]
+[ext_resource type="Texture2D" uid="uid://cf5wnrec7n27f" path="res://art/Mini Pixel Pack 2/Props/pixil-frame-0(15).png" id="2_spv7x"]
+
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_hlpdf"]
 b = Vector2(0, 48)
 
 [node name="start_line" type="Area2D" unique_id=663340452]
+script = ExtResource("1_vun7t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1521364953]
+texture_filter = 1
+position = Vector2(0, 24)
+rotation = 1.5707964
+texture = ExtResource("2_spv7x")
+region_enabled = true
+region_rect = Rect2(0, 6, 48, 4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=780064098]
 shape = SubResource("SegmentShape2D_hlpdf")
+
+[connection signal="body_entered" from="." to="." method="_start_or_lap"]

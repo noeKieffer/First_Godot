@@ -1,5 +1,4 @@
 extends CharacterBody2D
-#signal hit
 
 @export var max_speed = 600
 @export var speed = 0
@@ -94,7 +93,8 @@ func get_tile_speed() -> float:
 	return 1
 
 
-func start(pos):
+func start(pos, rot):
 	position = pos
+	rotation = rot
 	show()
 	$CollisionShape2D.disabled = false

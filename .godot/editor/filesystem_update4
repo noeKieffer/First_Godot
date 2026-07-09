@@ -1,10 +1,5 @@
+res://scripts/main_menu.gd
+res://scenes/main_menu.tscn
 res://scenes/start_line.tscn
-res://scenes/map.tscn
 res://scenes/checkpoint.tscn
 res://scenes/blue_car.tscn
-res://scenes/main.tscn
-res://scripts/start_line.gd
-res://scripts/map.gd
-res://scripts/main.gd
-res://scripts/checkpoint.gd
-res://scripts/blue_car.gd

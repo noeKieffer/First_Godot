@@ -28,19 +28,19 @@ func new_game():
 
 func _new_turn() -> void:
 	if (turn == 0):
-		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last lap : XX:XX:XX"
-		$Blue_car/CanvasLayer/BestTurnLabel.text = "Best lap : XX:XX:XX"
+		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last Lap : XX:XX:XX"
+		$Blue_car/CanvasLayer/BestTurnLabel.text = "Best Lap : XX:XX:XX"
 		turn += 1
 	elif (turn == 1):
-		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
-		$Blue_car/CanvasLayer/BestTurnLabel.text = "Best lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
+		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last Lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
+		$Blue_car/CanvasLayer/BestTurnLabel.text = "Best Lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
 		best_time = time_elapsed
 		turn += 1
 	elif (time_elapsed < best_time):
 		best_time = time_elapsed
-		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
-		$Blue_car/CanvasLayer/BestTurnLabel.text = "Best lap : %02d:%02d:%02d" % [best_time / 60, fmod(best_time, 60), fmod(best_time * 100, 100)]
+		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last Lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
+		$Blue_car/CanvasLayer/BestTurnLabel.text = "Best Lap : %02d:%02d:%02d" % [best_time / 60, fmod(best_time, 60), fmod(best_time * 100, 100)]
 	else:
-		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
+		$Blue_car/CanvasLayer/LastTurnLabel.text = "Last Lap : %02d:%02d:%02d" % [time_elapsed / 60, fmod(time_elapsed, 60), fmod(time_elapsed * 100, 100)]
 	time_elapsed = 0.0
 	$Blue_car/CanvasLayer/LapTimerLabel.show()

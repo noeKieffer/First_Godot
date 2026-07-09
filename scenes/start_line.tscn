@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://2pp6qr5w4uni"]
 
 [ext_resource type="Script" uid="uid://clgu4hbweo46m" path="res://scripts/start_line.gd" id="1_vun7t"]
-[ext_resource type="Texture2D" uid="uid://cf5wnrec7n27f" path="res://art/Mini Pixel Pack 2/Props/pixil-frame-0(15).png" id="2_spv7x"]
+[ext_resource type="Texture2D" uid="uid://cf5wnrec7n27f" path="res://art/Mini Pixel Pack 2/Props/checkpoints.png" id="2_spv7x"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_hlpdf"]
 b = Vector2(0, 48)

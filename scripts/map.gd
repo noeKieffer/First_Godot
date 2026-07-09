@@ -11,11 +11,8 @@ func check_all():
 			return 0
 	return 1
 
-func _new_turn(body: Node2D) -> void:
-	if (turn == 0):
-		start_line_pass.emit()
-		turn += 1
-	if (check_all()):
+func _new_turn(_body: Node2D) -> void:
+	if (check_all() || turn == 0):
 		start_line_pass.emit()
 		turn += 1
 		for c in all_checkpoints:

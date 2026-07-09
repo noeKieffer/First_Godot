@@ -1,4 +1,10 @@
+Button
+VBoxContainer
+HBoxContainer
 Label
+Control
+MarginContainer
+TextureRect
 Sprite2D
 CanvasLayer
 Camera2D
@@ -7,4 +13,3 @@ Area2D
 TileMapLayer
 CharacterBody2D
 TileMap
-Node2D

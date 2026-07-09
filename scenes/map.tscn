@@ -19,7 +19,7 @@ texture = ExtResource("3_gldc4")
 3:0/0/custom_data_0 = 0.5
 
 [sub_resource type="TileSet" id="TileSet_0cso3"]
-physics_layer_0/collision_layer = 2
+physics_layer_0/collision_layer = 65535
 physics_layer_0/collision_mask = 0
 custom_data_layer_0/name = "tile_speed"
 custom_data_layer_0/type = 3

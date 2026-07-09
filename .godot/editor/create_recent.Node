@@ -1,3 +1,5 @@
+MyCarClass
+Camera2D
 Button
 VBoxContainer
 HBoxContainer
@@ -7,9 +9,6 @@ MarginContainer
 TextureRect
 Sprite2D
 CanvasLayer
-Camera2D
 CollisionShape2D
 Area2D
 TileMapLayer
-CharacterBody2D
-TileMap

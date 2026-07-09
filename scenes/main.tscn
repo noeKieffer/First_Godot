@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://xqmj2negjvsr" path="res://scenes/blue_car.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://e1e27qng3lh4" path="res://scenes/map.tscn" id="4_tbgi4"]
 [ext_resource type="FontFile" uid="uid://ux83okvvv0na" path="res://fonts/Pixeled.ttf" id="4_tefeu"]
+[ext_resource type="PackedScene" uid="uid://cbduc31t072oj" path="res://scenes/red_car.tscn" id="5_tbgi4"]
 
 [node name="Main" type="Node" unique_id=1200729674]
 script = ExtResource("1_sugp2")
@@ -15,13 +16,9 @@ script = ExtResource("1_sugp2")
 [node name="StartPosition" type="Marker2D" parent="." unique_id=842246388]
 position = Vector2(880, 700)
 
-[node name="Blue_car" parent="." unique_id=1880255409 instance=ExtResource("4_jyhfs")]
-position = Vector2(-0.99999994, 0.9999999)
-scale = Vector2(5, 5)
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1495868500]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Blue_car" unique_id=1495868500]
-
-[node name="LapTimerLabel" type="Label" parent="Blue_car/CanvasLayer" unique_id=1411050686]
+[node name="LapTimerLabel" type="Label" parent="CanvasLayer" unique_id=1411050686]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -34,7 +31,7 @@ theme_override_colors/font_color = Color(0.106236584, 0.10623657, 0.10623657, 1)
 theme_override_fonts/font = ExtResource("4_tefeu")
 theme_override_font_sizes/font_size = 50
 
-[node name="LastTurnLabel" type="Label" parent="Blue_car/CanvasLayer" unique_id=1392024466]
+[node name="LastTurnLabel" type="Label" parent="CanvasLayer" unique_id=1392024466]
 offset_left = 50.0
 offset_top = 50.0
 offset_right = 90.0
@@ -42,7 +39,7 @@ offset_bottom = 73.0
 theme_override_colors/font_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
 theme_override_fonts/font = ExtResource("4_tefeu")
 
-[node name="BestTurnLabel" type="Label" parent="Blue_car/CanvasLayer" unique_id=2137403053]
+[node name="BestTurnLabel" type="Label" parent="CanvasLayer" unique_id=2137403053]
 offset_left = 50.0
 offset_top = 70.0
 offset_right = 90.0
@@ -50,12 +47,13 @@ offset_bottom = 93.0
 theme_override_colors/font_color = Color(0.106236584, 0.10623657, 0.10623657, 1)
 theme_override_fonts/font = ExtResource("4_tefeu")
 
-[node name="Camera2D" type="Camera2D" parent="Blue_car" unique_id=1730621423]
-position = Vector2(0, 10)
-limit_left = 0
-limit_top = 0
-limit_right = 2160
-limit_bottom = 2160
+[node name="Red_car" parent="." unique_id=135977530 instance=ExtResource("5_tbgi4")]
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(5, 5)
+
+[node name="Blue_car" parent="." unique_id=1880255409 instance=ExtResource("4_jyhfs")]
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(5, 5)
 
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
 [connection signal="start_line_pass" from="desert_map" to="." method="_new_turn"]

@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name MyCarClass
 
 @export var max_speed = 600
 @export var acceleration = 20
@@ -20,7 +21,7 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 		velocity.x += sin(rotation)
 		velocity.y -= cos(rotation)
-	
+		
 		if Input.is_action_pressed("move_forward"):
 			if speed < max_speed:
 				if speed < 0:
@@ -65,7 +66,7 @@ func _physics_process(delta: float) -> void:
 		rotation_degrees += degrees
 	elif Input.is_action_pressed("turn_left"):
 		rotation_degrees -= degrees
-
+	
 	if velocity.length() > 0:   
 		velocity = velocity.normalized() * speed * get_tile_speed()
 	

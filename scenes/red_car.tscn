@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://cbduc31t072oj"]
+
+[ext_resource type="Script" uid="uid://bla33ghuyo3yy" path="res://scripts/my_car_class.gd" id="1_aiis0"]
+[ext_resource type="Texture2D" uid="uid://cjxdfugh5cbsu" path="res://art/cars/red_car/red_car0.png" id="2_aiis0"]
+[ext_resource type="Texture2D" uid="uid://bi8iqlxl0dqfx" path="res://art/cars/red_car/red_car1.png" id="3_l562g"]
+[ext_resource type="Texture2D" uid="uid://c4clthqbfvib8" path="res://art/cars/red_car/red_car10.png" id="4_2wcsj"]
+[ext_resource type="Texture2D" uid="uid://cnye0whmt7x2r" path="res://art/cars/red_car/red_car11.png" id="5_yitwe"]
+[ext_resource type="Texture2D" uid="uid://d3lhp8jly8yqf" path="res://art/cars/red_car/red_car12.png" id="6_ekevs"]
+[ext_resource type="Texture2D" uid="uid://cchbfh30mkilp" path="res://art/cars/red_car/red_car13.png" id="7_wq2ur"]
+[ext_resource type="Texture2D" uid="uid://c14etqpvysamn" path="res://art/cars/red_car/red_car14.png" id="8_e7yg8"]
+[ext_resource type="Texture2D" uid="uid://d0os2ftc144hb" path="res://art/cars/red_car/red_car15.png" id="9_fa51j"]
+[ext_resource type="Texture2D" uid="uid://dahoxxhql1jm2" path="res://art/cars/red_car/red_car2.png" id="10_g4t4h"]
+[ext_resource type="Texture2D" uid="uid://bbhuysfs47xpd" path="res://art/cars/red_car/red_car3.png" id="11_ws81l"]
+[ext_resource type="Texture2D" uid="uid://mcpgly8xqdxw" path="res://art/cars/red_car/red_car4.png" id="12_disj2"]
+[ext_resource type="Texture2D" uid="uid://vw6q5omv3syn" path="res://art/cars/red_car/red_car5.png" id="13_quac1"]
+[ext_resource type="Texture2D" uid="uid://bqd0quurd2r7f" path="res://art/cars/red_car/red_car6.png" id="14_u3t07"]
+[ext_resource type="Texture2D" uid="uid://bcu5xsvj31apo" path="res://art/cars/red_car/red_car7.png" id="15_mw4xi"]
+[ext_resource type="Texture2D" uid="uid://c4jtycpi1wvgg" path="res://art/cars/red_car/red_car8.png" id="16_slau0"]
+[ext_resource type="Texture2D" uid="uid://bafgo312tduak" path="res://art/cars/red_car/red_car9.png" id="17_hhn3n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_veuvv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aiis0")
+}],
+"loop": true,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l562g")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_2wcsj")
+}],
+"loop": true,
+"name": &"10",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_yitwe")
+}],
+"loop": true,
+"name": &"11",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ekevs")
+}],
+"loop": true,
+"name": &"12",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_wq2ur")
+}],
+"loop": true,
+"name": &"13",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_e7yg8")
+}],
+"loop": true,
+"name": &"14",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_fa51j")
+}],
+"loop": true,
+"name": &"15",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_g4t4h")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ws81l")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_disj2")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_quac1")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_u3t07")
+}],
+"loop": true,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_mw4xi")
+}],
+"loop": true,
+"name": &"7",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_slau0")
+}],
+"loop": true,
+"name": &"8",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_hhn3n")
+}],
+"loop": true,
+"name": &"9",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8o5d"]
+size = Vector2(8, 12)
+
+[node name="Red_car" type="CharacterBody2D" unique_id=135977530]
+script = ExtResource("1_aiis0")
+max_speed = 700
+metadata/_custom_type_script = "uid://bla33ghuyo3yy"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=875328904]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_veuvv")
+animation = &"9"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2067393562]
+shape = SubResource("RectangleShape2D_o8o5d")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=544167769]
+limit_left = 0
+limit_top = 0
+limit_right = 2160
+limit_bottom = 2160
+position_smoothing_enabled = true

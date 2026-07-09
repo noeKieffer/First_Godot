@@ -3,3 +3,9 @@ res://scenes/main_menu.tscn
 res://scenes/start_line.tscn
 res://scenes/checkpoint.tscn
 res://scenes/blue_car.tscn
+res://scripts/blue_car.gd
+res://scripts/my_car_class.gd
+res://scenes/red_car.tscn
+res://scenes/main.tscn
+res://scripts/main.gd
+res://scenes/map.tscn

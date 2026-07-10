@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://pujiyl6hacf7"]
 
 [ext_resource type="Script" uid="uid://djif50y8jqafe" path="res://scripts/main.gd" id="1_sugp2"]
-[ext_resource type="PackedScene" uid="uid://xqmj2negjvsr" path="res://scenes/blue_car.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://xqmj2negjvsr" path="res://scenes/cars/blue_car.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://e1e27qng3lh4" path="res://scenes/map.tscn" id="4_tbgi4"]
 [ext_resource type="FontFile" uid="uid://ux83okvvv0na" path="res://fonts/Pixeled.ttf" id="4_tefeu"]
-[ext_resource type="PackedScene" uid="uid://cbduc31t072oj" path="res://scenes/red_car.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://cbduc31t072oj" path="res://scenes/cars/red_car.tscn" id="5_tbgi4"]
 
 [node name="Main" type="Node" unique_id=1200729674]
 script = ExtResource("1_sugp2")

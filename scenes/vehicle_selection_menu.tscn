@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://cau52dhx1di41"]
+
+[ext_resource type="Script" uid="uid://42q8c3y3nbbn" path="res://scripts/vehicle_selection_menu.gd" id="1_euire"]
+[ext_resource type="Texture2D" uid="uid://cm11i4qkn8w82" path="res://art/Mini Pixel Pack 2/Levels/Desert_details (16 x 16).png" id="2_24w1i"]
+[ext_resource type="PackedScene" uid="uid://beiexdhhlkjns" path="res://scenes/cars_stats/blue_car_stats.tscn" id="3_er5df"]
+[ext_resource type="PackedScene" uid="uid://0fq5fqah2k64" path="res://scenes/cars_stats/red_car_stats.tscn" id="4_qpmsd"]
+
+[node name="vehicle_selection_menu" type="Control" unique_id=385589323]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_euire")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=645980622]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1680.0
+offset_right = 1680.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_24w1i")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="." unique_id=997537952]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 250.0
+offset_right = 910.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.40392157, 0.38039216, 0.37254903, 1)
+theme_override_font_sizes/font_size = 64
+text = "select your car"
+horizontal_alignment = 1
+
+[node name="Prev_Button" type="Button" parent="." unique_id=1329157350]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 500.0
+offset_right = 200.0
+offset_bottom = 800.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
+text = "<"
+
+[node name="Next_Button" type="Button" parent="." unique_id=179558462]
+layout_mode = 0
+offset_left = 920.0
+offset_top = 500.0
+offset_right = 1020.0
+offset_bottom = 800.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
+text = ">"
+
+[node name="Select_Button" type="Button" parent="." unique_id=1385659080]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 900.0
+offset_right = 920.0
+offset_bottom = 1000.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
+text = "select this car"
+
+[node name="Menu_Button" type="Button" parent="." unique_id=721820169]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 900.0
+offset_right = 500.0
+offset_bottom = 1000.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 32
+text = "back to menu"
+
+[node name="BlueCarStats" parent="." unique_id=834703030 instance=ExtResource("3_er5df")]
+layout_mode = 1
+offset_left = 210.0
+offset_top = 500.0
+offset_right = -210.0
+offset_bottom = -320.0
+
+[node name="RedCarStats" parent="." unique_id=1832215023 instance=ExtResource("4_qpmsd")]
+visible = false
+layout_mode = 1
+offset_left = 210.0
+offset_top = 500.0
+offset_right = -210.0
+offset_bottom = -320.0
+
+[connection signal="button_down" from="Prev_Button" to="." method="_prev_button_pressed"]
+[connection signal="button_down" from="Next_Button" to="." method="_next_button_pressed"]
+[connection signal="button_down" from="Select_Button" to="." method="_on_select_button_button_down"]
+[connection signal="button_down" from="Menu_Button" to="." method="_menu_button_pressed"]

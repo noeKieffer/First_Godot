@@ -1,7 +1,7 @@
+MyCarClass
+Sprite2D
 Label
 ProgressBar
-Sprite2D
-MyCarClass
 TextureRect
 ReferenceRect
 Camera2D

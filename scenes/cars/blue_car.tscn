@@ -155,12 +155,13 @@ size = Vector2(8, 12)
 [node name="Blue_car" type="CharacterBody2D" unique_id=628936820]
 collision_mask = 2
 script = ExtResource("1_e6ljr")
+rotation_factor = 9
 metadata/_custom_type_script = "uid://bla33ghuyo3yy"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2146233848]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_e6ljr")
-animation = &"15"
+animation = &"0"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137341217]
 shape = SubResource("RectangleShape2D_p5b87")

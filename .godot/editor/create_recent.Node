@@ -1,3 +1,5 @@
+TabBar
+TabContainer
 MyCarClass
 Sprite2D
 Label
@@ -11,4 +13,3 @@ HBoxContainer
 Control
 MarginContainer
 CanvasLayer
-CollisionShape2D

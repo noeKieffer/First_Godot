@@ -1,2 +1,5 @@
 res://scenes/cars_stats/yellow_car_stats.tscn
 res://scenes/cars/yellow_car.tscn
+res://scenes/vehicle_selection_menu.tscn
+res://scripts/vehicle_selection_menu.gd
+res://scripts/main.gd

@@ -1,7 +1,7 @@
 extends Control
 
 #@onready var main_menu: PackedScene = preload("res://scenes/main_menu.tscn")
-#@onready var start_level: PackedScene = preload("res://scenes/main.tscn")
+@onready var start_level: PackedScene = preload("res://scenes/main.tscn")
 ## Called when the node enters the scene tree for the first time.
 #func _ready() -> void:
 	#pass # Replace with function body.
@@ -17,21 +17,13 @@ func _menu_button_pressed() -> void:
 
 
 func _prev_button_pressed() -> void:
-	if ($BlueCarStats.visible == true):
-		$RedCarStats.show()
-		$BlueCarStats.hide()
-	else:
-		$BlueCarStats.show()
-		$RedCarStats.hide()
+	if (!$Select_menu.select_previous_available()):
+		$Select_menu.current_tab = $Select_menu.get_tab_count() - 1
 
 
 func _next_button_pressed() -> void:
-	if ($BlueCarStats.visible == true):
-		$RedCarStats.show()
-		$BlueCarStats.hide()
-	else:
-		$BlueCarStats.show()
-		$RedCarStats.hide()
+	if (!$Select_menu.select_next_available()):
+		$Select_menu.current_tab = 0
 
 
 #func _select_button_pressed() -> void:

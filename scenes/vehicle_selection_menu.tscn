@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cm11i4qkn8w82" path="res://art/Mini Pixel Pack 2/Levels/Desert_details (16 x 16).png" id="2_24w1i"]
 [ext_resource type="PackedScene" uid="uid://beiexdhhlkjns" path="res://scenes/cars_stats/blue_car_stats.tscn" id="3_er5df"]
 [ext_resource type="PackedScene" uid="uid://0fq5fqah2k64" path="res://scenes/cars_stats/red_car_stats.tscn" id="4_qpmsd"]
+[ext_resource type="PackedScene" uid="uid://cvfeqdwxf03ty" path="res://scenes/cars_stats/green_car_stats.tscn" id="5_taj1w"]
+[ext_resource type="PackedScene" uid="uid://bhyioiapvny27" path="res://scenes/cars_stats/yellow_car_stats.tscn" id="6_c14s7"]
 
 [node name="vehicle_selection_menu" type="Control" unique_id=385589323]
 layout_mode = 3
@@ -81,20 +83,51 @@ size_flags_stretch_ratio = 2.0
 theme_override_font_sizes/font_size = 32
 text = "back to menu"
 
-[node name="BlueCarStats" parent="." unique_id=834703030 instance=ExtResource("3_er5df")]
-layout_mode = 1
+[node name="Select_menu" type="TabContainer" parent="." unique_id=1396574535]
+layout_mode = 0
 offset_left = 210.0
 offset_top = 500.0
-offset_right = -210.0
-offset_bottom = -320.0
+offset_right = 910.0
+offset_bottom = 800.0
+current_tab = 0
+tabs_visible = false
 
-[node name="RedCarStats" parent="." unique_id=1832215023 instance=ExtResource("4_qpmsd")]
-visible = false
+[node name="blue" type="TabBar" parent="Select_menu" unique_id=1010316450]
+layout_mode = 2
+metadata/_tab_index = 0
+metadata/_tab_name = "blue"
+
+[node name="BlueCarStats" parent="Select_menu/blue" unique_id=834703030 instance=ExtResource("3_er5df")]
 layout_mode = 1
-offset_left = 210.0
-offset_top = 500.0
-offset_right = -210.0
-offset_bottom = -320.0
+offset_left = 0.0
+offset_right = -700.0
+offset_bottom = -269.0
+
+[node name="red" type="TabBar" parent="Select_menu" unique_id=538194893]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="RedCarStats" parent="Select_menu/red" unique_id=1832215023 instance=ExtResource("4_qpmsd")]
+layout_mode = 1
+offset_right = -700.0
+offset_bottom = -269.0
+
+[node name="green" type="TabBar" parent="Select_menu" unique_id=993310850]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="GreenCarStats" parent="Select_menu/green" unique_id=588569586 instance=ExtResource("5_taj1w")]
+layout_mode = 1
+
+[node name="yellow" type="TabBar" parent="Select_menu" unique_id=332760731]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="YellowCarStats" parent="Select_menu/yellow" unique_id=1712704067 instance=ExtResource("6_c14s7")]
+layout_mode = 1
 
 [connection signal="button_down" from="Prev_Button" to="." method="_prev_button_pressed"]
 [connection signal="button_down" from="Next_Button" to="." method="_next_button_pressed"]

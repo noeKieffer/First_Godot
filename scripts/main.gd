@@ -1,6 +1,7 @@
 extends Node
 
 #var score
+@export var car_color: String
 var time_elapsed: float
 var turn: int
 var best_time: float

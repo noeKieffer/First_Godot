@@ -6,12 +6,21 @@ class_name MyCarClass
 @export var rotation_factor = 7
 var speed = 0
 var screen_size
+var camera
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	hide()
 	velocity = Vector2.ZERO
+	camera = Camera2D.new()
+	add_child(camera)
+	camera.limit_top = 0
+	camera.limit_left = 0
+	camera.limit_right = 2160
+	camera.limit_bottom = 2160
+	camera.position_smoothing_enabled = true
+	camera.make_current()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,17 +1,30 @@
 extends Node
 
 #var score
-@export var car_color: String
+#@export var car_color: String
 var time_elapsed: float
 var turn: int
 var best_time: float
+var player: MyCarClass = MyCarClass.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$CanvasLayer/LapTimerLabel.hide()
-	new_game()
 	time_elapsed = 0.0
 	turn = 0
+	var what_is_the_color: PackedScene
+	if (Globals.car_color == "blue"):
+		what_is_the_color = load("res://scenes/cars/blue_car.tscn")
+	elif (Globals.car_color == "red"):
+		what_is_the_color = load("res://scenes/cars/red_car.tscn")
+	elif (Globals.car_color == "green"):
+		what_is_the_color = load("res://scenes/cars/green_car.tscn")
+	else:
+		what_is_the_color = load("res://scenes/cars/yellow_car.tscn")
+	player = what_is_the_color.instantiate()
+	add_child(player)
+	player.scale += Vector2(4,4)
+	new_game()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -24,7 +37,8 @@ func new_game():
 	var start_size = $desert_map/start_line/CollisionShape2D.shape.get_rect().size.x + $desert_map/start_line/CollisionShape2D.shape.get_rect().size.y
 	var start_center = Vector2(((start_size / 2) * -sin(star_rot)) - (10 * cos(star_rot)), ((start_size / 2) * cos(star_rot)) + (10 * -sin(star_rot)))
 	$StartPosition.position = ($desert_map/start_line.position + start_center) * 5
-	$Red_car.start($StartPosition.position, $desert_map/start_line.rotation + PI / 2)
+	player.start($StartPosition.position, $desert_map/start_line.rotation + PI / 2)
+	#player.show()
 
 
 func _new_turn() -> void:

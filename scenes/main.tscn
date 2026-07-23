@@ -1,10 +1,8 @@
 [gd_scene format=3 uid="uid://pujiyl6hacf7"]
 
 [ext_resource type="Script" uid="uid://djif50y8jqafe" path="res://scripts/main.gd" id="1_sugp2"]
-[ext_resource type="PackedScene" uid="uid://xqmj2negjvsr" path="res://scenes/cars/blue_car.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://e1e27qng3lh4" path="res://scenes/map.tscn" id="4_tbgi4"]
 [ext_resource type="FontFile" uid="uid://ux83okvvv0na" path="res://fonts/Pixeled.ttf" id="4_tefeu"]
-[ext_resource type="PackedScene" uid="uid://cbduc31t072oj" path="res://scenes/cars/red_car.tscn" id="5_tbgi4"]
 
 [node name="Main" type="Node" unique_id=1200729674]
 script = ExtResource("1_sugp2")
@@ -46,14 +44,6 @@ offset_right = 90.0
 offset_bottom = 93.0
 theme_override_colors/font_color = Color(0.106236584, 0.10623657, 0.10623657, 1)
 theme_override_fonts/font = ExtResource("4_tefeu")
-
-[node name="Red_car" parent="." unique_id=135977530 instance=ExtResource("5_tbgi4")]
-position = Vector2(-5.9604645e-08, 0)
-scale = Vector2(5, 5)
-
-[node name="Blue_car" parent="." unique_id=1880255409 instance=ExtResource("4_jyhfs")]
-position = Vector2(-5.9604645e-08, 0)
-scale = Vector2(5, 5)
 
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
 [connection signal="start_line_pass" from="desert_map" to="." method="_new_turn"]

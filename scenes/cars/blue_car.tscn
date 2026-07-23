@@ -165,10 +165,3 @@ animation = &"0"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1137341217]
 shape = SubResource("RectangleShape2D_p5b87")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1145284229]
-limit_left = 0
-limit_top = 0
-limit_right = 2160
-limit_bottom = 2160
-position_smoothing_enabled = true
